@@ -5,7 +5,7 @@ LABEL "com.github.actions.description"="Deploy a Cloudflare Worker with the Serv
 LABEL "com.github.actions.icon"="cloud"
 LABEL "com.github.actions.color"="orange"
 
-RUN yarn global add serverless  &&\
+RUN yarn global add serverless@2.72.3  &&\
     mkdir -p /$HOME/worker-deploy &&\
     cd $HOME/worker-deploy &&\
     serverless create --template cloudflare-workers &&\
