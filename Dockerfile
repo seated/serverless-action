@@ -1,4 +1,4 @@
-FROM node:10-slim
+FROM node:12-slim
 
 LABEL "com.github.actions.name"="GitHub Action for Cloudflare Workers"
 LABEL "com.github.actions.description"="Deploy a Cloudflare Worker with the Serverless Framework"
